@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Management</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Custom Navbar Styles */
+.navbar {
+    background-color: #c300ff; /* Blue hospital theme */
+    padding: 15px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 18px;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #cce5ff !important; /* Light blue hover effect */
+}
+
+/* Style the Appointment Button */
+.navbar .btn-primary {
+    background-color: #ffffff;
+    color: #007bff;
+    border: 2px solid #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .btn-primary:hover {
+    background-color: #cce5ff;
+    color: #0056b3;
+    border: 2px solid #cce5ff;
+}
+
+/* Navbar Toggler Styling */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+/* Sticky Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>HospitalCare+</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#doctors">Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="btn btn-primary" href="appointments.html">Book Appointment</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center text-white d-flex align-items-center"
+        style="background: url('https://www.tritonhospital.com/images/appointment/book-appointment.jpeg') center/cover no-repeat; height: 60vh;">
+        <div class="container">
+            <h1 class="display-4">Your Health, Our Priority</h1>
+            <p class="lead">Get expert medical care with just a few clicks.</p>
+            <a href="appointments.html" class="btn btn-light btn-lg mt-3">Book an Appointment</a>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2>About Our Hospital</h2>
+            <p class="lead">We provide world-class healthcare services with a patient-centered approach. Our highly
+                skilled doctors and state-of-the-art facilities ensure top-notch medical care.</p>
+            <a href="about.html" class="btn btn-outline-primary">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Our Services</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk2x7a6We1Ws5dzyWv99z6T4plkOlb8d3L7Q&s" class="mb-3" width="80">
+                    <h4>General Checkup</h4>
+                    <p>Routine health checkups to ensure your well-being.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="emergency.jpg" class="mb-3" width="80">
+                    <h4>Emergency Care</h4>
+                    <p>24/7 emergency services for urgent medical needs.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="diagnostics.jpg" class="mb-3" width="80">
+                    <h4>Diagnostics</h4>
+                    <p>Advanced diagnostic tests for accurate treatment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors -->
+    <section id="doctors" class="py-5">
+        <div class="container text-center">
+            <h2>Meet Our Doctors</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img src="doctor1.jpg" class="rounded-circle mb-3" width="120">
+                    <h5>Dr. John Doe</h5>
+                    <p>Cardiologist</p>
+                    <a href="appointments.html" class="btn btn-outline-primary btn-sm">Book Now</a>
+                </div>
+                <div class="col-md-4">
+                    <img src="doctor2.jpg" class="rounded-circle mb-3" width="120">
+                    <h5>Dr. Jane Smith</h5>
+                    <p>Neurologist</p>
+                    <a href="appointments.html" class="btn btn-outline-primary btn-sm">Book Now</a>
+                </div>
+                <div class="col-md-4">
+                    <img src="doctor3.jpg" class="rounded-circle mb-3" width="120">
+                    <h5>Dr. Emily Brown</h5>
+                    <p>Dermatologist</p>
+                    <a href="appointments.html" class="btn btn-outline-primary btn-sm">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>What Our Patients Say</h2>
+            <blockquote class="blockquote">
+                <p class="mb-4">"The best hospital experience I've ever had! The doctors are highly professional and
+                    caring."</p>
+                <footer class="blockquote-footer">Sarah Wilson</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <p>📍 123 Main Street, City, Country</p>
+            <p>📞 +1 234 567 890</p>
+            <p>📧 info@hospital.com</p>
+            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 HospitalCare+. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
