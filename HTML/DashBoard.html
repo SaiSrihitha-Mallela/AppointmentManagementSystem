@@ -60,6 +60,26 @@
     top: 0;
     z-index: 1000;
 }
+.text {
+    background: rgba(237, 237, 237, 0.6);
+    color: rgb(35, 34, 34); 
+    padding: 15px 25px;
+    display: inline-block;
+     border-radius: 10px; 
+    font-weight: bold; 
+    /* text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);  */
+}
+
+.sub-text {
+    /* background: #e9b8ea4d;  */
+    color: #0a0909;
+    
+    border-radius: 8px;
+    font-size: 1.2rem; 
+  
+} 
+
+
 
     </style>
 </head>
@@ -76,12 +96,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="DashBoard.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#doctors">Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="BookedAppointments.html">Appointments</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item"><a class="btn btn-primary" href="appointments.html">Book Appointment</a></li>
+                    <li class="nav-item"><a class="btn btn-primary"  style="margin-left: 20px;" href="CreateAccount.html">Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -91,8 +113,8 @@
     <section class="hero text-center text-white d-flex align-items-center"
         style="background: url('https://www.tritonhospital.com/images/appointment/book-appointment.jpeg') center/cover no-repeat; height: 60vh;">
         <div class="container">
-            <h1 class="display-4">Your Health, Our Priority</h1>
-            <p class="lead">Get expert medical care with just a few clicks.</p>
+            <h1 class="display-4 text">Your Health, Our Priority</h1>
+            <p class="lead sub-text">Get expert medical care with just a few clicks.</p>
             <a href="appointments.html" class="btn btn-light btn-lg mt-3">Book an Appointment</a>
         </div>
     </section>
@@ -113,17 +135,17 @@
             <h2>Our Services</h2>
             <div class="row mt-4">
                 <div class="col-md-4">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk2x7a6We1Ws5dzyWv99z6T4plkOlb8d3L7Q&s" class="mb-3" width="80">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk2x7a6We1Ws5dzyWv99z6T4plkOlb8d3L7Q&s" class="mb-4 " width="190">
                     <h4>General Checkup</h4>
                     <p>Routine health checkups to ensure your well-being.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="emergency.jpg" class="mb-3" width="80">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi_kxVH3aRyYq2vSiRvfAZxmoAiYcLL3PCIg&s" class="mb-3" width="240">
                     <h4>Emergency Care</h4>
                     <p>24/7 emergency services for urgent medical needs.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="diagnostics.jpg" class="mb-3" width="80">
+                    <img src="https://www.rajagirihospital.com/userfiles/services/355dbbff0e704c7fb37488a1c55612f2.jpg" class="mb-2" width="190">
                     <h4>Diagnostics</h4>
                     <p>Advanced diagnostic tests for accurate treatment.</p>
                 </div>
